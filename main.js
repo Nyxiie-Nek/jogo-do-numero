@@ -16,6 +16,6 @@ function verificarPalpite () {
     palpites.textContent += palpiteUsuario + " ";
 
     if (palpiteUsuario === numeroAleratorio)
-        ultimoResultado.textContent = "Acerto Mizeravi";
+        ultimoResultado.textContent = "Acertô mizeravi!!!";
 
 }
