@@ -17,5 +17,7 @@ function verificarPalpite () {
 
     if (palpiteUsuario === numeroAleratorio)
         ultimoResultado.textContent = "Acertô mizeravi!!!";
-
+        ultimoResultado.style.backgroundColor = "green";
+    baixoOuAlto.textContent = "";
+    finalizarJogo();
 }
