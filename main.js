@@ -1,10 +1,11 @@
-
+let numeroAleatorio = math.floor(Math.random() *100) + 1;
 const palpite = document.querySelector('.palpite');
 const ultimoResultado = document.querySelector('.ultimoResultado');
 const baixoOuAlto = document.querySelector('.baixoOuAlto');
 const envioPalpite = document.querySelector('.envioPalpite');
 const campoPalpite = document.querySelector('.campoPalpite');
-
+let contagemPalpites = 1;
+let botaoReinicar;
 
 
 function verificarPalpite () {
