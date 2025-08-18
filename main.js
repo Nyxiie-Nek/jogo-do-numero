@@ -51,3 +51,10 @@ function finalizarJogo() {
     document.body.appendChild(botaoReiniciar);
     botaoReiniciar.addEventListener('click', reiniciarJogo);
 }
+
+function reiniciarJogo() {
+    contagemPalpites = 1;
+    const paragrafosReiniciar = document.querySelectorAll('paragrafosResultado p');
+    for (const paragrafoReiniciar of paragrafosReiniciar) {
+        paragrafoReiniciar.textContent = "";
+}
