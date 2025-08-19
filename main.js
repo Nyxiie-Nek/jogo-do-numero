@@ -58,3 +58,12 @@ function reiniciarJogo() {
     for (const paragrafoReiniciar of paragrafosReiniciar) {
         paragrafoReiniciar.textContent = "";
 }
+
+    botaoReiniciar.parentNode.removeChild(botaoReiniciar);
+    campoPalpite.disabled = false;
+    campoPalpite.value = "";
+    campoPalpite.focus();
+    ultimoResultado.style.backgroundColor = 'withe';
+    numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+}
+
