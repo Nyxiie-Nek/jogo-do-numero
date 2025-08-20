@@ -22,7 +22,7 @@ function verificarPalpite () {
     finalizarJogo();
 }    else if (conatgemPalpites === 10) {
     ultimoResultado.textContext = "Não foi dessa vez >~<";
-    baixoOuAlto.textcontent = "";
+    baixoOuAlto.textContent = "";
     finalizarJogo();
 } else {
     ultimoResultado.textContent = "Errado";
@@ -54,7 +54,7 @@ function finalizarJogo() {
 
 function reiniciarJogo() {
     contagemPalpites = 1;
-    const paragrafosReiniciar = document.querySelectorAll('paragrafosResultado p');
+    const paragrafosReiniciar = document.querySelectorAll('paragrafosResultados p');
     for (const paragrafoReiniciar of paragrafosReiniciar) {
         paragrafoReiniciar.textContent = "";
 }
