@@ -1,96 +1,102 @@
-html{
-   font-family: 'arial', sans-serif;
-   background: linear-gradient(to right, #fefefe, #000000);
-   height: 100vh;
-   font-display: flex;
-   justify-content: center;
-   align-items: center;
+html {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #fefefe, #000000);
+    height: 100vh;
+    /* CORRIGIDO: "font-display" para "display" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body{
-   width: 50%;
-   max-width: 800px;
-   min-width: 400px;
-   margin: 0 auto;
-   background: #ffffff;
-   padding: 20px;
-   border-radius: 10px;
-   box-shadow: 0 4-x 8px rgba(0, 0, 0, 0.2);
+body {
+    width: 50%;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    /* CORRIGIDO: "4-x" para "4px" */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h1{
-   text-align: center;
-   font-size: 2.5em;
-   color: #333;
-   margin-bottom: 20px;
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.formulario{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formulario input[type="number"] {
-   width: 200px;
-   padding: 10px;
-   margin-bottom: 10px;
-   border-radius: 5px;
-   border: 1px solid #cccccc;
-   font-size: 1.1em;
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    font-size: 1.1em;
 }
 
 .formulario input[type="submit"] {
-   padding: 10px 20px;
-   background-color: #28a745;
-   color: #ffffff;
-   border: none;
-   border-radius: 5px;
-   font-size: 1.1em;
-   cursor: pointer;
-   transition: background-collor 0.3 ease;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    /* CORRIGIDO: "background-collor" e adicionado "s" */
+    transition: background-color 0.3s ease;
 }
 
-.formulario input [type="submit"]:hoover {
-   background-color: #218838;
+/* CORRIGIDO: Sem espaço e ":hover" */
+.formulario input[type="submit"]:hover {
+    background-color: #218838;
 }
 
-.paragrafosResultado p {
-   font-size: 1.2 em;
-   text-align: center;
-   margin: 10px 0;
+.paragrafosResultados p {
+    /* CORRIGIDO: "1.2 em" para "1.2em" */
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 0;
 }
 
 .ultimoResultado {
-   color: #ffffff:
-   padding: 3px;
-   border-radius: 5px;
-   font-size: 1.3em;
-   text-align: center;
+    color: #ffffff;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    text-align: center;
 }
 
+/* Estas classes funcionam melhor se você ajustar o JS como sugeri */
 .ultimoResultado.errado {
-   background-color: #dc3545;
+    background-color: #dc3545;
 }
 
 .ultimoResultado.correto {
-   background-color: #28a745;
+    background-color: #28a745;
 }
 
 .botaoReiniciar {
-   display: block;
-   margin: 20px auto;
-   padding: 10px 20px;
-   background-color: #007bff;
-   color: #ffffff;
-   border: none;
-   border-radius: 5px;
-   font-size: 1.2em;
-   cursor: pointer;
-   transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.botaoReiniciar:hoover {
-   background-color: #0056b3;
+/* CORRIGIDO: ":hover" */
+.botaoReiniciar:hover {
+    background-color: #0056b3;
 }
-
